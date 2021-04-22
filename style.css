@@ -46,12 +46,121 @@ nav div ul{
 	font-weight: 700;
 	color: black;
 }
+nav div ul li a{
+	font-family: 'ascentis', sans-serif;
+	font-weight: 700;
+	color: black;
+}
 .uk-navbar-dropdown{
 	font-family: 'ascentis', sans-serif;
 	color: black;
 }
+.peso-tipo{
+	font-family: 'ascentis', sans-serif !important;
+	font-size: 20px !important;
+	color: #fff !important;
+}
+.peso-tipo-sub{
+	font-family: 'ascentis', sans-serif !important;
+	font-size: 12pt;
+	color: #000000 !important;
+}
+
+.estructura-categorias{
+    display: flex;
+    
+}
+.direction-categorias{
+     flex-direction: row;
+     -webkit-columns: 8 75px;
+  -moz-columns: 8 75px;
+  columns: 8 75px;
+  -webkit-column-gap: 0em;
+  -moz-column-gap: 0em;
+  column-gap: 0em;
+
+}
 
 
+.cursor-uno{ 
+	cursor: url("img/logo-digital-trash.png"), auto;
+}
+/* Guía de estilo */
+
+.naranja{
+	font-family: sans-serif;
+	background-color: #FB7044;
+	width: 300px;
+	height: 300px;
+	padding-top: 10rem;
+	padding-left: 6rem;
+	padding-right:6rem;
+	padding-bottom: 6rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-bottom: 2rem;
+}
+.lila{
+	font-family: sans-serif;
+	background-color: #7a18f0;
+	width: 300px;
+	height: 300px;
+	padding-top: 10rem;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-bottom: 2rem;
+	align-content: center;
+}
+.negro{
+	font-family: sans-serif;
+	background-color: #000000;
+	color: var(--color-bg);
+	width: 300px;
+	height: 300px;
+	padding-top: 10rem;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-bottom: 2rem;
+}
+.h1{
+	font-family: "ascentis";
+	font-size: 6rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	margin-left: 5rem;
+}
+.parrafo-guia-estilo{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+.columna-estructura{
+	display: flex;
+}
+.columna-direction{
+	flex-direction: row;
+	column-count: 3;
+	width: 33%;
+
+}
+ul {
+    list-style-type: none;
+}
+.icono {
+width: 10%;
+}
+
+.parrafo-tipo{
+	font-family: "ascentis";
+	font-size: 6rem;
+	margin-left: 2rem;
+}
 /* botones y botones con hover: */
 .button {
 	pointer-events: auto;
@@ -59,12 +168,34 @@ nav div ul{
 	background: #FB7044;
 	border: none;
 	padding: 1.5rem 3rem;
-	margin: 0.25rem 1.5rem;
+	margin: 2rem 0rem;
 	font-family: inherit;
 	font-size: 1.5rem;
 	position: relative;
 	display: inline-block;
-	color: #fff !important;
+	color: #fff !important; 
+}
+.button--descarga {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #FB7044;
+	border: none;
+	padding: 1rem 3rem;
+	margin: 0.25rem 0rem;
+	font-family: inherit;
+	font-size: 1.5rem;
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	justify-content: flex-end;
+}
+.button--pan--descarga {
+	font-family: 'ascentis', sans-serif;
+	font-weight: 700;
+	border: 2px solid #7a18f0;
+	border-radius: 3rem;
+	overflow: hidden;
+	color: #fff;
 }
 
 
@@ -85,6 +216,7 @@ nav div ul{
 	border-radius: 3rem;
 	overflow: hidden;
 	color: #fff !important;
+	margin-left: 0rem;
 }
 
 .button--pan span {
@@ -108,7 +240,7 @@ a{
 	
 	
 }
-button a{
+button span{
 	text-decoration: none;
 	color:#fff !important;
 	font-family: 'ascentis', 'sans-serif';
@@ -125,14 +257,31 @@ button a{
 	padding-right: 10rem;
 	padding-bottom: 1rem;
 }
+.border-pill{
+	padding-top: 0rem;
+}
+/*Estructura-flexbox*/
 .estructura-icono {
 	display: flex;
 	
 }
+.estructura-button-descarga{
+	display: flex;
+}
 .direction-icono {
 flex-direction: row;
-align-items: right;
+justify-content: flex-end;
 width: 10%;
+margin-left:32rem;
+
+
+
+}
+
+.direction-button-descarga{
+	flex-direction: row;
+	align-items:right;
+	width: 33.33%
 
 }
 .texto-button-modal{
@@ -143,6 +292,7 @@ width: 10%;
 
 .texto-header{
 	font-family: 'Ascentis', sans-serif;
+
 	color:#000;
 }
 *,
@@ -508,6 +658,20 @@ html.has-scroll-dragging {
 	cursor: -webkit-grabbing;
 	cursor: grabbing; 
 }
+@media screen and (orientation:portrait){
+	.direction-menu{
+		flex-direction: column;
+	}
+	.peso-tipo{
+		font-family: 'ascentis', sans-serif !important;
+		font-size: 8px !important;
+		color: #fff !important;
+		margin-top: 0rem;
+		padding-top: 0rem;
+	}
+
+}
+
 © 2021 GitHub, Inc.
 Terms
 Privacy

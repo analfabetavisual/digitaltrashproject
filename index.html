@@ -18,24 +18,24 @@
         <video width="1440" height="900" autoplay>
         <source src="img/Prueba novedades (1).mov" type="video/mp4">
         </video>
-    <div class="uk-position-top">
+    <div class="uk-position-top peso-tipo">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left texto-header">
+            <div class="uk-navbar-left ">
                 <ul class="uk-navbar-nav">
                     
-                    <li class="uk-active"><a href="#">Digital Trash</a></li>
-                    <li><a href="#">Suscríbete</a></li>
+                    <li class="uk-active"><a class="peso-tipo" a href="#">Digital Trash</a></li>
+                    <li><a class="peso-tipo" href="#">Suscríbete</a></li>
                     <li>
-                        <a href="#">Menú</a>
+                        <a href="#" a class="peso-tipo">Menú</a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="blog/src/index.html">Blog</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Proyecto</a></li>
-                                <li><a href="#">Artwork</a></li>
+                              
+                                <li><a href="blog/src/index.html" a class="peso-tipo-sub">Blog</a></li>
+            
+                                <li><a href="#" a class="peso-tipo-sub">Proyecto</a></li>
+                                <li><a href="#" a class="peso-tipo-sub">Artwork</a></li>
                                 <li class="uk-nav-divider"></li>
-                                <li><a href="#">Login</a></li>
+                                <li><a href="#" a class="peso-tipo-sub">Login</a></li>
                             </ul>
                         </div>
                     </li>
@@ -44,26 +44,66 @@
         </nav>
     </div>
 </div>
+
 </header>
+
 <main>
-    <ul class="uk-pagination">
-        <li><a href=""><span uk-pagination-previous></span></a></li>
-        <li><a href=""><span uk-pagination-next></span></a></li>
-        <!-- Aquí empieza el menú de categorías -->
-    </ul>
-    <button class="button button--pan"><span>Paisajes</span></button>
+
+    
+
+  <div class="uk-position-relative uk-visible-toggle estructura-categorias" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-6 uk-child-width-1-7@s uk-child-width-1-8@m">
+        <li>
+
+  
+    <button class="button button--pan"><span>Paisajes</span></button> 
+    </li>
+    <li>
     <button class="button button--pan"><span>Personas</span></button>
-    <button class="button button--pan"><span>Naturaleza</span></button>
+  </li>
+    <li>
+      <button class="button button--pan"><span>Naturaleza</span></button>
+    </li>
+    <li>
     <button class="button button--pan"><span>Trabajo</span></button>
-    <button class="button button--pan"><span>Experimental</span></button>
-    <button class="button button--pan"><span>Películas</span></button>
-    <button class="button button--pan"><span>Interiores</span></button>
-    <button class="button button--pan"><span>Animales</span></button>
+    </li>
+    <li>
+      <button class="button button--pan"><span>Experimental</span></button>
+    </li>
+    <li>
+      <button class="button button--pan"><span>Películas</span></button>
+    </li>
+    <li>
+      <button class="button button--pan"><span>Interiores</span></button>
+    </li>
+    <li>
+      <button class="button button--pan"><span>Animales</span></button>
+     </li>
+    <li>
+
     <button class="button button--pan"><span>Transportes</span></button>
-    <button class="button button--pan"><span>Deportes</span></button>
-    <button class="button button--pan"><span>Hora Mágica</span></button>
-    <button class="button button--pan"><span>Diseño</span></button>
-    <button class="button button--pan"><span>Gastronomía</span></button>
+  </li>
+    <li>
+      <button class="button button--pan"><span>Deportes</span></button>
+    </li>
+    <li>
+      <button class="button button--pan"><span>Hora Mágica</span></button>
+    </li>
+    <li>
+      <button class="button button--pan"><span>Diseño</span></button>
+    </li>
+    <li>
+      <button class="button button--pan"><span>Gastronomía</span></button>
+    </li>
+  </ul>
+
+  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+   
 
   
 </main>
@@ -71,53 +111,66 @@
     <!-- Aquí empieza el masonry -->
 <div class= "uk-container uk-margin-top"> 
 
-<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m data-uk-grid-parallax" uk-grid="masonry: true">
        
             <!-- Este es el modal número uno -->
             <a href="#modal-one" uk-toggle><img src= "img/interior-avión.jpg"></a>
             <div id="modal-one" uk-modal>  
-               <div class="uk-modal-dialog modal">
-                   <button class="uk-modal-close-default" type="button" uk-close></button>
-                    <div class="estructura-icono direction-icono">
-                        <img src= "img/icono-corazón.png">
-                        <img src= "img/icono-cruz.png">
-                    
-                    </div>
+              <div class="uk-modal-dialog modal">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class= "estructura-icono direction-icono">
+                  <img class="uk-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+                  <img src= "img/icono-corazón.png">
+                  <img src= "img/icono-cruz.png">
+                 
+              </div>
+              
                    <div class="uk-modal-header">
-                       <img src="img/interior-avión.jpg">
-                       <button class="uk-button texto-button-modal" type="button">Submmit</button>
-                       <button class="uk-button texto-button-modal" type="button">Descarga</button>
+    
+                  <img src="img/interior-avión.jpg">
+                       <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
                    </div>
                    </div>
                    </div>
+                  
+                  
 <!-- Este es el modal número dos -->
 
     
  <a href="#modal-two" uk-toggle><img src= "img/interior-planta.jpg"></a>
  <div id="modal-two" uk-modal>  
-    <div class="uk-modal-dialog modal">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div>
+
+  <div class="uk-modal-dialog modal">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class= "estructura-icono direction-icono">
+    <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+    
+        <img src= "img/icono-corazón.png">
+        <img src= "img/icono-cruz.png">
+     
+  </div>
         <div class="uk-modal-header">
             <img src="img/interior-planta.jpg">
-            <button class="uk-button texto-button-modal" type="button">Submmit</button>
-            <button class="uk-button texto-button-modal" type="button">Descarga</button>
+            <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
+            
         </div>
         </div>
         </div>
         <!-- Este es el modal número tres -->
         <a href="#modal-three" uk-toggle><img src= "img/paisaje-interior-coche.jpg"></a>
         <div id="modal-three" uk-modal>  
-           <div class="uk-modal-dialog modal">
+          <div class="uk-modal-dialog modal">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class= "estructura-icono direction-icono">
+            <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
             
-               <button class="uk-modal-close-default" type="button" uk-close></button>
+                <img src= "img/icono-corazón.png">
+                <img src= "img/icono-cruz.png">
+             
+          </div>
                <div class="uk-modal-header">
                    <img src="img/paisaje-interior-coche.jpg">
-                   <button class="uk-button texto-button-modal" type="button">Submmit</button>
-                   <button class="uk-button texto-button-modal" type="button">Descarga</button>
+                   <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
                </div>
                </div>
                </div>
@@ -127,16 +180,18 @@
  <a href="#modal-four" uk-toggle><img src= "img/paisaje-luna.jpg"></a>
  <div id="modal-four" uk-modal>  
      
-    <div class="uk-modal-dialog modal">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+  <div class="uk-modal-dialog modal">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class= "estructura-icono direction-icono">
+    <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+    
+        <img src= "img/icono-corazón.png">
+        <img src= "img/icono-cruz.png">
+     
+  </div>
         <div class="uk-modal-header">
             <img src="img/paisaje-luna.jpg">
-            <button class="uk-button texto-button-modal" type="button">Submmit</button>
-            <button class="uk-button texto-button-modal" type="button">Descarga</button>
+            <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
         </div>
         </div>
         </div>
@@ -145,46 +200,52 @@
     <div id="modal-five" uk-modal>  
     <div class="uk-modal-dialog modal">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="estructura-icono direction-icono">
+        <div class= "estructura-icono direction-icono">
+        <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+        
             <img src= "img/icono-corazón.png">
             <img src= "img/icono-cruz.png">
-        </div> 
+         
+      </div>
         <div class="uk-modal-header">
             <img src="img/paisaje-mar.jpg">
-            <button class="uk-button texto-button-modal" type="button">Submmit</button>
-            <button class="uk-button texto-button-modal" type="button">Descarga</button>
+            <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
         </div>
         </div>
         </div>
     <!-- Este es el modal número seis -->
     <a href="#modal-six" uk-toggle><img src= "img/paraje-riotinto-4.jpg"></a>
     <div id="modal-six" uk-modal> 
-    <div class="uk-modal-dialog modal">
+      <div class="uk-modal-dialog modal">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="estructura-icono direction-icono">
+        <div class= "estructura-icono direction-icono">
+        <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+        
             <img src= "img/icono-corazón.png">
             <img src= "img/icono-cruz.png">
-        </div> 
+         
+      </div> 
         <div class="uk-modal-header">
             <img src="img/paraje-riotinto-4.jpg">
-            <button class="uk-button texto-button-modal" type="button">Submmit</button>
-            <button class="uk-button texto-button-modal" type="button">Descarga</button>
+            <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
         </div>
         </div>
         </div>
     <!-- Este es el modal número siete -->
     <a href="#modal-seven" uk-toggle><img src= "img/exterior-montaña-2.jpg"></a>
     <div id="modal-seven" uk-modal>  
-    <div class="uk-modal-dialog modal">
+      <div class="uk-modal-dialog modal">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="estructura-icono direction-icono">
+        <div class= "estructura-icono direction-icono">
+        <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+        
             <img src= "img/icono-corazón.png">
             <img src= "img/icono-cruz.png">
-        </div> 
+         
+      </div>
         <div class="uk-modal-header">
             <img src="img/exterior-montaña-2.jpg">
-            <button class="uk-button texto-button-modal" type="button">Submmit</button>
-            <button class="uk-button texto-button-modal" type="button">Descarga</button>
+            <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
         </div>
         </div>
         </div>
@@ -192,16 +253,18 @@
     <!-- Este es el modal número ocho -->
     <a href="#modal-eight" uk-toggle><img src= "img/aloe-vera-planta.jpg"></a>
     <div id="modal-eight" uk-modal>  
-    <div class="uk-modal-dialog modal">
+      <div class="uk-modal-dialog modal">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="estructura-icono direction-icono">
+        <div class= "estructura-icono direction-icono">
+        <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+        
             <img src= "img/icono-corazón.png">
             <img src= "img/icono-cruz.png">
-        </div> 
+         
+      </div> 
         <div class="uk-modal-header">
             <img src="img/aloe-vera-planta.jpg">
-            <button class="uk-button texto-button-modal" type="button">Submmit</button>
-            <button class="uk-button texto-button-modal" type="button">Descarga</button>
+            <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
         </div>
         </div>
         </div>
@@ -209,16 +272,18 @@
       <!-- Este es el modal número nueve -->
       <a href="#modal-nine" uk-toggle><img src= "img/exterior-parque-fuente.jpg"></a>
       <div id="modal-nine" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/exterior-parque-fuente.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
@@ -226,16 +291,18 @@
          <!-- Este es el modal número diez -->
       <a href="#modal-ten" uk-toggle><img src= "img/paisaje-océano.jpg"></a>
       <div id="modal-ten" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/paisaje-océano.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
@@ -244,48 +311,54 @@
           <div class="uk-flex uk-flex-center uk-flex-middle"><img src= "img/paisaje-montañas-verdes.jpg"></div>
         </a>
       <div id="modal-eleven" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/paisaje-montañas-verdes.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
          <!-- Este es el modal número twelve -->
       <a href="#modal-twelve" uk-toggle><img src= "img/exterior-montaña.jpg"></a>
       <div id="modal-twelve" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/exterior-montaña.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
           <!-- Este es el modal número thirteen -->
       <a href="#modal-thirteen" uk-toggle><img src= "img/exterior-calle-residencial.jpg"></a>
       <div id="modal-thirteen" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/exterior-calle-residencial.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
@@ -293,60 +366,69 @@
          <!-- Este es el modal número fourteen -->
       <a href="#modal-fourteen" uk-toggle><img src= "img/exterior-explanada.jpg"></a>
       <div id="modal-fourteen" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/exterior-explanada.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
          <!-- Este es el modal número fifteen -->
       <a href="#modal-fifteen" uk-toggle><img src= "img/exterior-parque-general.jpg"></a>
       <div id="modal-fifteen" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/exterior-parque-general.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
          <!-- Este es el modal número sixteen -->
       <a href="#modal-sixteen" uk-toggle><img src= "img/exterior-parque.jpg"></a>
       <div id="modal-sixteen" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/exterior-parque.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
          <!-- Este es el modal número seventeen -->
       <a href="#modal-seventeen" uk-toggle><img src= "img/exterior-ciudad-julia.jpg"></a>
       <div id="modal-seventeen" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/exterior-ciudad-julia.jpg">
               <button class="uk-button texto-button-modal" type="button">Submmit</button>
@@ -357,496 +439,558 @@
            <!-- Este es el modal número eighteen -->
       <a href="#modal-eighteen" uk-toggle><img src= "img/exterior-cactus.jpg"></a>
       <div id="modal-eighteen" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/exterior-cactus.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
            <!-- Este es el modal número nineteen -->
       <a href="#modal-nineteen" uk-toggle><img src= "img/exterior-playa.jpg"></a>
       <div id="modal-nineteen" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/exterior-playa.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
          <!-- Este es el modal número twenty -->
       <a href="#modal-twenty" uk-toggle><img src= "img/exterior-río.jpg"></a>
       <div id="modal-twenty" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/exterior-río.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
          <!-- Este es el modal número twenty one -->
-      <a href="#modal-twenty one" uk-toggle><img src= "img/exterior-parque-fuente.jpg"></a>
-      <div id="modal-twenty one" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-one" uk-toggle><img src= "img/exterior-parque-fuente.jpg"></a>
+      <div id="modal-twenty-one" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/exterior-parque-fuente.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
          <!-- Este es el modal número twenty two -->
-      <a href="#modal-twenty two" uk-toggle><img src= "img/árbol-exterior-pradera.jpg"></a>
-      <div id="modal-twenty two" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-two" uk-toggle><img src= "img/árbol-exterior-pradera.jpg"></a>
+      <div id="modal-twenty-two" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/árbol-exterior-pradera.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
         <!-- Este es el modal número twenty three -->
-      <a href="#modal-twenty three" uk-toggle><img src= "img/cartel-exterior-publicidad.jpg"></a>
-      <div id="modal-twenty three" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-three" uk-toggle><img src= "img/cartel-exterior-publicidad.jpg"></a>
+      <div id="modal-twenty-three" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/cartel-exterior-publicidad.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
         <!-- Este es el modal número twenty four -->
-      <a href="#modal-twenty four" uk-toggle><img src= "img/casa-paisaje-exterior.jpg"></a>
-      <div id="modal-twenty four" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-four" uk-toggle><img src= "img/casa-paisaje-exterior.jpg"></a>
+      <div id="modal-twenty-four" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/casa-paisaje-exterior.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
         <!-- Este es el modal número twenty five -->
-      <a href="#modal-twenty five" uk-toggle><img src= "img/pacífico-edificio.jpg"></a>
-      <div id="modal-twenty five" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-five" uk-toggle><img src= "img/pacífico-edificio.jpg"></a>
+      <div id="modal-twenty-five" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/pacífico-edificio.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button uk-button-primary" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
         <!-- Este es el modal número twenty six -->
-      <a href="#modal-twenty four" uk-toggle><img src= "img/silla-exterior.jpg"></a>
-      <div id="modal-twenty four" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-four" uk-toggle><img src= "img/silla-exterior.jpg"></a>
+      <div id="modal-twenty-four" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/silla-exterior.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button uk-button-primary" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
         <!-- Este es el modal número twenty seven -->
-      <a href="#modal-twenty seven" uk-toggle><img src= "img/hoya-carnosa-planta.jpg"></a>
-      <div id="modal-twenty seven" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-seven" uk-toggle><img src= "img/hoya-carnosa-planta.jpg"></a>
+      <div id="modal-twenty-seven" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/hoya-carnosa-planta.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
         <!-- Este es el modal número twenty eight -->
-      <a href="#modal-twenty eight" uk-toggle><img src= "img/vino-objeto.jpg"></a>
-      <div id="modal-twenty eight" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-eight" uk-toggle><img src= "img/vino-objeto.jpg"></a>
+      <div id="modal-twenty-eight" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/vino-objeto.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
         <!-- Este es el modal número twenty nine -->
-      <a href="#modal-twenty nine" uk-toggle><img src= "img/viña-objeto.jpg"></a>
-      <div id="modal-twenty nine" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-twenty-nine" uk-toggle><img src= "img/viña-objeto.jpg"></a>
+      <div id="modal-twenty-nine" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/vino-objeto.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
           </div>
           </div>
           </div>
           <!-- Este es el modal número thirty -->
       <a href="#modal-thirty" uk-toggle><img src= "img/flor-volcánica.jpg"></a>
       <div id="modal-thirty" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/flor-volcánica.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
         <!-- Este es el modal número thirty one -->
-      <a href="#modal-thirty one" uk-toggle><img src= "img/méndez-álvaro-vias.jpg"></a>
-      <div id="modal-thirty one" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-one" uk-toggle><img src= "img/méndez-álvaro-vias.jpg"></a>
+      <div id="modal-thirty-one" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/méndez-álvaro-vias.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
          <!-- Este es el modal número thirty two -->
-      <a href="#modal-thirty two" uk-toggle><img src= "img/paisaje-riotinti.jpg"></a>
-      <div id="modal-thirty two" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-two" uk-toggle><img src= "img/paisaje-riotinti.jpg"></a>
+      <div id="modal-thirty-two" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/paisaje-riotinti.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
          <!-- Este es el modal número thirty thirty three -->
-      <a href="#modal-thirty three" uk-toggle><img src= "img/paisaje-ventana-ciudad.jpg"></a>
-      <div id="modal-thirty three" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-three" uk-toggle><img src= "img/paisaje-ventana-ciudad.jpg"></a>
+      <div id="modal-thirty-three" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/paisaje-ventana-ciudad.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
          <!-- Este es el modal número thirty four -->
-      <a href="#modal-thirty four" uk-toggle><img src= "img/cocido-madrileño-gastronomía.jpg"></a>
-      <div id="modal-thirty four" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-four" uk-toggle><img src= "img/cocido-madrileño-gastronomía.jpg"></a>
+      <div id="modal-thirty-four" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/cocido-madrileño-gastronomía.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
          <!-- Este es el modal número thirty five -->
-      <a href="#modal-thirty five" uk-toggle><img src= "img/nieve-árboles.jpg"></a>
-      <div id="modal-thirty five" uk-modal>  
-      <div class="uk-modal-dialog">
+      <a href="#modal-thirty-five" uk-toggle><img src= "img/nieve-árboles.jpg"></a>
+      <div id="modal-thirty-five" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/nieve-árboles.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número thirty six -->
-      <a href="#modal-thirty six" uk-toggle><img src= "img/nieve-ciudad-3.jpg"></a>
-      <div id="modal-thirty six" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-six" uk-toggle><img src= "img/nieve-ciudad-3.jpg"></a>
+      <div id="modal-thirty-six" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/nieve-ciudad-3.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número thirty seven -->
-      <a href="#modal-thirty seven" uk-toggle><img src= "img/gato-navidad.jpg"></a>
-      <div id="modal-thirty seven" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-seven" uk-toggle><img src= "img/gato-navidad.jpg"></a>
+      <div id="modal-thirty-seven" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/gato-navidad.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número thirty eight -->
-      <a href="#modal-thirty eight" uk-toggle><img src= "img/concha-lapa.jpg"></a>
-      <div id="modal-thirty eight" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-eight" uk-toggle><img src= "img/concha-lapa.jpg"></a>
+      <div id="modal-thirty-eight" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/concha-lapa.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número thirty nine -->
-      <a href="#modal-thirty nine" uk-toggle><img src= "img/cocido-gastronomía.jpg"></a>
-      <div id="modal-thirty nine" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-thirty-nine" uk-toggle><img src= "img/cocido-gastronomía.jpg"></a>
+      <div id="modal-thirty-nine" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/cocido-gastronomía.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
          <!-- Este es el modal número fourty-->
       <a href="#modal-fourty" uk-toggle><img src= "img/edificio-pacífico-contrapicado.jpg"></a>
       <div id="modal-fourty" uk-modal>  
-      <div class="uk-modal-dialog modal">
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/edificio-pacífico-contrapicado.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número fourty one-->
-      <a href="#modal-fourty one" uk-toggle><img src= "img/cama-decoración-interior.jpg"></a>
-      <div id="modal-fourty one" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-fourty-one" uk-toggle><img src= "img/cama-decoración-interior.jpg"></a>
+      <div id="modal-fourty-one" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/cama-decoración-interior.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número fourty two-->
-      <a href="#modal-fourty two" uk-toggle><img src= "img/persona-dorsal-paisaje.jpg"></a>
-      <div id="modal-fourty two" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-fourty-two" uk-toggle><img src= "img/persona-dorsal-paisaje.jpg"></a>
+      <div id="modal-fourty-two" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/persona-dorsal-paisaje.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número fourty three-->
-      <a href="#modal-fourty three" uk-toggle><img src= "img/gastronomía-lamprea.jpg"></a>
-      <div id="modal-fourty three" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-fourty-three" uk-toggle><img src= "img/gastronomía-lamprea.jpg"></a>
+      <div id="modal-fourty-three" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/gastronomía-lamprea.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número fourty four-->
-      <a href="#modal-fourty four" uk-toggle><img src= "img/tumbona-piscina.jpg"></a>
-      <div id="modal-fourty four" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-fourty-four" uk-toggle><img src= "img/tumbona-piscina.jpg"></a>
+      <div id="modal-fourty-four" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
-              <img src="img/gastronomía-tumbona-piscina.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <img src="img/tumbona-piscina.jpg">
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
               <!-- Este es el modal número fourty five-->
-      <a href="#modal-fourty five" uk-toggle><img src= "img/pacífico-edificio.jpg"></a>
-      <div id="modal-fourty five" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-fourty-five" uk-toggle><img src= "img/pacífico-edificio.jpg"></a>
+      <div id="modal-fourty-five" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/pacífco-edificio.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
           <!-- Este es el modal número fourty six-->
-      <a href="#modal-fourty six" uk-toggle><img src= "img/paisaje-ventanilla.jpg"></a>
-      <div id="modal-fourty six" uk-modal>  
-      <div class="uk-modal-dialog">
+      <a href="#modal-fourty-six" uk-toggle><img src= "img/paisaje-ventanilla.jpg"></a>
+      <div id="modal-fourty-six" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
         </div> 
           <div class="uk-modal-header">
               <img src="img/paisaje-ventanilla.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
          <!-- Este es el modal número fourty seven-->
-      <a href="#modal-fourty seven" uk-toggle><img src= "img/primer-plano-persona-paisaje.jpg"></a>
-      <div id="modal-fourty seven" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-fourty-seven" uk-toggle><img src= "img/primer-plano-persona-paisaje.jpg"></a>
+      <div id="modal-fourty-seven" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/primer-plano-persona-paisaje.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
          <!-- Este es el modal número fourty eight-->
-      <a href="#modal-fourty eight" uk-toggle><img src= "img/salvavidas.jpg"></a>
-      <div id="modal-fourty eight" uk-modal>  
-      <div class="uk-modal-dialog modal">
+      <a href="#modal-fourty-eight" uk-toggle><img src= "img/salvavidas.jpg"></a>
+      <div id="modal-fourty-eight" uk-modal>  
+        <div class="uk-modal-dialog modal">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="estructura-icono direction-icono">
-            <img src= "img/icono-corazón.png">
-            <img src= "img/icono-cruz.png">
-        </div> 
+          <div class= "estructura-icono direction-icono">
+          <img class="uk-border-pill width-border-pill" src="img/carmen-olivares.png" width="200" height="200" alt="Border pill">
+          
+              <img src= "img/icono-corazón.png">
+              <img src= "img/icono-cruz.png">
+           
+        </div>
           <div class="uk-modal-header">
               <img src="img/salvavidas.jpg">
-              <button class="uk-button texto-button-modal" type="button">Submmit</button>
-              <button class="uk-button texto-button-modal" type="button">Descarga</button>
+              <button class="button--descarga button--pan--descarga texto-button-modal">Descarga</button>
             </div>
             </div>
             </div>
@@ -854,8 +998,8 @@
     </section>
            
         <section>
-      <article>
-        <ul class="uk-pagination" uk-margin>
+         
+          <ul class="uk-pagination" uk-margin>
             <li><a href="#"><span uk-pagination-previous></span></a></li>
             <li><a href="#">1</a></li>
             <li class="uk-disabled"><span>...</span></li>
@@ -870,9 +1014,8 @@
             <li><a href="#">20</a></li>
             <li><a href="#"><span uk-pagination-next></span></a></li>
         </ul>
-    </article>
         </section>
-    </div>
+    
     </body>
    
 
